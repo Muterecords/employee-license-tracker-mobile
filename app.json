@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Employee License Tracker",
+    "slug": "employee-license-tracker", 
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./client/src/assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./client/src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.licenseetracker.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./client/src/assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.licenseetracker.mobile"
+    },
+    "web": {
+      "favicon": "./client/src/assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "@capacitor/cli",
+        {
+          "platforms": ["android"]
+        }
+      ]
+    ]
+  }
+}
